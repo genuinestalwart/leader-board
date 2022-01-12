@@ -1,4 +1,38 @@
-/* Parent Level Styles */
-body {
+/* Parents and Common Styles */
+
+body, h2 {
     margin: 0;
+}
+header, header > div, nav {
+    display: flex;
+}
+header, main {
+    padding: 0 20%;
+}
+main {
+    background-color: #E6E6FA;
+}
+img {
+    width: 100%;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #562EFF;
+    height: 100px;
+    justify-content: space-between;
+}
+header, #idea, nav {
+    align-items: center;
+}
+header h2 {
+    margin-left: 15px;
+}
+header, nav > a {
+    color: #ffffff;
+}
+nav > a {
+    margin-right: 35px;
+    text-decoration: none;
 }
