@@ -1,9 +1,14 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* Parents and Common Styles */
 
 body, h2, h3 {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-header, header > div, nav, .player {
+header, header > div, nav, .player, .blog {
     display: flex;
 }
 header, #idea, nav, .player {
@@ -19,11 +24,17 @@ main {
 section {
     background-color: #ffffff;
     border-radius: 5px;
-    margin: 15px 0;
+    margin: 30px 0;
     padding: 30px;
+}
+h2, .blog a {
+    color: #562eff;
 }
 img {
     width: 100%;
+}
+a {
+    text-decoration: none;
 }
 
 /* Header Styles */
@@ -41,23 +52,35 @@ header, nav > a {
 }
 nav > a {
     margin-right: 35px;
-    text-decoration: none;
 }
 
 /* Top Player and Top Blog Styles */
 
-#top-players > div {
+#top-player > div, #top-blog > div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
+}
+#top-player > div {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
 }
 hr {
     border: 1px solid #D1D1D1;
     margin: 30px 0;
 }
 .player-image {
-    width: 56px;
+    width: 20%;
 }
 .player-name {
     margin: 0 auto 0 15px;
+}
+#top-blog > div {
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog-image {
+    width: 45%;
+}
+.blog-details {
+    padding: 0 30px 0 20px;
+    width: 55%;
 }
